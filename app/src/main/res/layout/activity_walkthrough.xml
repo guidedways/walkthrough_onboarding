@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/viewRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/walkthrough_bg"
+    >
+
+    <!-- Top Welcome Labels -->
+    <LinearLayout
+        android:id="@+id/topLabelsContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Version -->
+        <LinearLayout
+            android:id="@+id/topNameContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/lbl2DoName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:paddingStart="8dp"
+                android:paddingTop="8dp"
+                android:text="2Do"
+                android:textColor="@color/v2_editorbar_icon_tint_light"
+                android:textSize="12sp"
+                />
+
+            <TextView
+                android:id="@+id/lbl2DoVersion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:paddingStart="3dp"
+                android:paddingTop="8dp"
+                android:text="| v2.0"
+                android:textColor="@color/v2_editorbar_icon_tint_light"
+                android:textSize="11sp"
+                />
+        </LinearLayout>
+
+        <!-- Welcome -->
+        <TextView
+            android:id="@+id/lblWelcomeTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:paddingBottom="12dp"
+            android:paddingEnd="18dp"
+            android:paddingStart="18dp"
+            android:paddingTop="24dp"
+            android:text="@string/welcome"
+            android:textColor="@color/v2_editorbar_page_text_normal"
+            android:textSize="18sp"
+            />
+
+        <TextView
+            android:id="@+id/lblWatchVideo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:drawablePadding="6dp"
+            android:drawableStart="@drawable/ic_play_circle_filled_red"
+            android:fontFamily="sans-serif-smallcaps"
+            android:gravity="center"
+            android:minHeight="30dp"
+            android:padding="4dp"
+            android:text="Watch the intro"
+            android:textSize="12dp"
+            />
+    </LinearLayout>
+
+    <!-- Phone container to move around -->
+    <FrameLayout
+        android:id="@+id/phoneContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        tools:translationY="160dp">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/imgPhoneFrame"
+            android:layout_width="320dp"
+            android:layout_height="632dp"
+            android:src="@drawable/nexus_5_mock"
+            />
+
+        <!-- 320 x 480 (when frame is 320x632). Ratio of W: 267/320 H: 825/1027 -->
+        <walkthrough.a2doapp.com.walkthrough.ScaleImageView
+            android:id="@+id/imgPhoneShot"
+            android:layout_width="320dp"
+            android:layout_height="480dp"
+            android:translationY="50dp"
+            />
+
+    </FrameLayout>
+
+    <!-- Bottom Part -->
+    <RelativeLayout
+        android:id="@+id/bottomContainer"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:layout_gravity="bottom"
+        android:background="@color/color_transparent"
+        >
+
+        <View
+            android:id="@+id/topShadow"
+            android:layout_width="match_parent"
+            android:layout_height="6dp"
+            android:layout_alignParentTop="true"
+            android:alpha="0.5"
+            android:background="@drawable/v2_view_gradient_fade_top"/>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/tutorialPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/topShadow"
+            android:background="@drawable/walkthrough_bottom_bg"
+            android:paddingBottom="56dp"
+            />
+
+        <LinearLayout
+            android:id="@+id/bottomPagerBar"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:paddingBottom="8dp"
+            android:paddingEnd="8dp"
+            android:paddingStart="16dp"
+            android:paddingTop="8dp"
+            >
+
+            <me.relex.circleindicator.CircleIndicator
+                android:id="@+id/circularIndicator"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_marginEnd="24dp"
+                android:layout_weight="2"
+                app:ci_drawable="@drawable/gray_circle"
+                app:ci_gravity="center_vertical|start"
+                />
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btnDone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:text="@string/done"
+                android:textColor="@color/v2_editorbar_icon_tint"
+                android:textSize="15sp"
+                />
+        </LinearLayout>
+
+    </RelativeLayout>
+</FrameLayout>
