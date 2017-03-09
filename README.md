@@ -36,3 +36,11 @@ You can construct each *WalkThrough Section* and define how you would like it to
 # **Output**
 ![alt tag](https://github.com/guidedways/walkthrough_onboarding/blob/master/demo.png)
 
+## Licence
+Walkthrough Onboarding is released under the MIT license.
+See [LICENSE](./LICENSE) for details.
+
+## Follow Us
+[![Twitter URL](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=https://github.com/guidedways/walkthrough_onboarding)
+[![Twitter Follow](https://img.shields.io/twitter/follow/ramotion.svg?style=social)](https://twitter.com/2DoApp)
+
