@@ -34,5 +34,5 @@ You can construct each *WalkThrough Section* and define how you would like it to
 ```
 
 # **Output**
-![alt tag](https://github.com/guidedways/walkthrough_onboarding/blob/master/demo/demo.gif)
+![alt tag](https://github.com/guidedways/walkthrough_onboarding/blob/master/demo.png)
 
