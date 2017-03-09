@@ -32,7 +32,7 @@ You simple construct a `WalkthroughSection` and define how you would like it to 
     section.sectionDescription = "Fancy David Allen's GTD® methodology? Enable the special Inbox to serve as your default collection list from Settings > Default Collection List.";
     
     /* 0 - 100. Vertical position. 
-       0 = top part of phone below the view; 
+       0 = top part of phone hidden below the container; 
        100 = bottom of part of phone and container aligned 
     */
     section.sectionDeviceVerticalPercToShow = 40;
