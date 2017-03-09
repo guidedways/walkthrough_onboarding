@@ -1,4 +1,7 @@
 # Walkthrough / Onboarding Tutorial
+
+![alt tag](https://github.com/guidedways/walkthrough_onboarding/blob/master/example.gif)
+
 This is a generic Walkthrough / Onboarding Tutorial activity for Android apps. The screen has two parts to it: a screen shot of your app, and some description below.
 
 Instead of a typical parallax sliding screen, the activity presents you with screenshots of your app inside of a phone template, thus making it as simple as taking screenshots of your existing app and adding those to this project. 
