@@ -2,9 +2,15 @@
 
 ![alt tag](https://github.com/guidedways/walkthrough_onboarding/blob/master/example.gif)
 
-This is a generic Walkthrough / Onboarding Tutorial activity for Android apps. The screen has two parts to it: a screen shot of your app, and some description below.
+This is a generic Walkthrough / Onboarding Tutorial activity for Android apps. The screen has two parts to it: a screen shot of your app, and some description below. Demo it live in [2Do](https://play.google.com/store/apps/details?id=com.guidedways.android2do&hl=en).
 
 Instead of a typical parallax sliding screen, the activity presents you with screenshots of your app inside of a phone template, thus making it as simple as taking screenshots of your existing app and adding those to this project. 
+
+## Requirements
+- Android 5.0 Lollipop (API lvl 21) or greater (mainly since the project uses SVG drawables; replacing with PNGs would lower this down to API 14)
+- Your favorite IDE
+
+## How to customize
 
 You can construct each *WalkThrough Section* and define how you would like it to appear on screen. The embedded screenshot can move from left to right, top to bottom and have zoom applied to it. In code, it's as simple as:
 
