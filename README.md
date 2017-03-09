@@ -42,5 +42,5 @@ See [LICENSE](./LICENSE) for details.
 
 ## Follow Us
 [![Twitter URL](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=https://github.com/guidedways/walkthrough_onboarding)
-[![Twitter Follow](https://img.shields.io/twitter/follow/2DoApp.svg?style=social&label=Follow)](http://twitter.com/2DoApp)
+[![Twitter Follow](https://img.shields.io/twitter/follow/2DoApp.svg?style=social&label=Follow)](https://twitter.com/2DoApp)
 
