@@ -21,7 +21,7 @@ If your app is constantly improving, and you find yourself adding new features o
 
 In `WalkthroughActivityFragment`, navigate to the `initSections()` method and define your sections there.
 
-You simple construct a `WalkthroughSection` and define how you would like it to appear on screen. The embedded screenshot can move from left to right, top to bottom and have zoom applied to it. The image then accompanies a title and some description. In code, it's as simple as:
+You simply construct a `WalkthroughSection` and define how you would like it to appear on screen. The embedded screenshot can move from left to right, top to bottom and have zoom applied to it. The image then accompanies a title and some description. In code, it's as simple as:
 
 ```
     WalkthroughSection section = new WalkthroughSection();
