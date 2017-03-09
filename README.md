@@ -29,3 +29,7 @@ You can construct each *WalkThrough Section* and define how you would like it to
     
     walkthroughSectionList.add(section)
 ```
+
+# **Output**
+![alt tag](https://github.com/guidedways/walkthrough_onboarding/blob/master/demo/demo.gif)
+
