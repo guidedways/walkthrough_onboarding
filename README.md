@@ -31,16 +31,26 @@ You simple construct a `WalkthroughSection` and define how you would like it to 
     section.sectionTitle = "Native Inbox for Getting Things Done®";
     section.sectionDescription = "Fancy David Allen's GTD® methodology? Enable the special Inbox to serve as your default collection list from Settings > Default Collection List.";
     
-    /* 0 = just below bottom container rim, 100 = bottom of phone touching rim */
+    /* 0 - 100. Vertical position. 
+       0 = top part of phone below the view; 
+       100 = bottom of part of phone and container aligned 
+    */
     section.sectionDeviceVerticalPercToShow = 40;
     
-    /* 0 = screen center / normal, 100 = phone container's left edge touching Vertical center axis, -100 = phone's right edge touching center axis */
+    /* -100 - 100. Horizontal position.
+       0 = phone appears in center / normal;
+       100 = phone's left edge to the right of the center position of the screen
+       -100 = phone's right edge to the left of the center position of the screen
+    */
     section.sectionDeviceHorizontalPercToShow = 0;
     
-    /* 0 = normal size, 100 = twice as large */
+    /* 0 - 100. Zoom. Can be negative to zoom out.
+       0 = normal size
+       100 = twice as large 
+    */
     section.sectionDeviceZoomPercToShow = 0;
     
-    /* Added motion effect of slowly moving upwards*/
+    /* Add motion effect of slowly moving upwards towards infinity after appearing on screen */
     section.prolongMovingUp = 28;
     
     ...
